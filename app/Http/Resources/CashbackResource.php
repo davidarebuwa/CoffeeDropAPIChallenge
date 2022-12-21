@@ -18,7 +18,7 @@ class CashbackResource extends JsonResource
             'ristretto' => $this->resource['Ristretto'],
             'espresso' => $this->resource['Espresso'],
             'lungo' => $this->resource['Lungo'],
-            'total' => $this->resource['total'],
+            'sum' => $this->resource->sum(),
         ];
     }
 }

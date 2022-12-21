@@ -82,9 +82,6 @@ class LocationController extends Controller
                 ->orderBy('distance', 'asc');
 
         })->first();
-
-        \Log::info('Location: ' . $location);
-
     
         return new LocationResource($location);
     }
